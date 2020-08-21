@@ -1,0 +1,12 @@
+<div class="event-thumbnail">
+    <h2>{{ _event.name }}</h2>
+    <div> Date : {{ _event.date }}</div>
+    <div> time : {{ _event.time }}</div>
+    <div> Price : ${{ _event.price }}</div>
+    <div>
+        <span>Location : {{ _event.location.address }} </span>
+        <span>&nbsp;</span>
+        <span>{{ _event.location.city }}, {{ _event.location.country }} </span>
+    </div>
+    <button (click)='subscribe()'>subscribe</button>
+</div>
