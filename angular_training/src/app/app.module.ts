@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
+import { ApiService } from './service/api.service'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

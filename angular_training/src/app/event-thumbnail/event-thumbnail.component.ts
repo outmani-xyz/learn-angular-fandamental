@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+declare let toastr
 
 @Component({
   selector: 'app-event-thumbnail',
@@ -9,7 +10,7 @@ export class EventThumbnailComponent implements OnInit {
 
   @Input() _event: any;
    constructor() { }
-   msg(){
+   msg(name){
    }
   ngOnInit(): void {
   }
