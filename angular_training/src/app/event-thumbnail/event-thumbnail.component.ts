@@ -9,9 +9,11 @@ declare let toastr
 export class EventThumbnailComponent implements OnInit {
 
   @Input() _event: any;
-   constructor() { }
-   msg(name){
-   }
+  constructor() { }
+  getDetails(event){
+    console.log(event);
+    
+  }
   ngOnInit(): void {
   }
 

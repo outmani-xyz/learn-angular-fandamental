@@ -1,1 +1,6 @@
-<app-event-thumbnail *ngFor="let event of events"  [_event]='event'></app-event-thumbnail>
+<ul>
+    <li [routerLink]="['/events']">Events</li>
+    <li [routerLink]="['/events/new']">create</li>
+</ul>
+<router-outlet></router-outlet>
+
