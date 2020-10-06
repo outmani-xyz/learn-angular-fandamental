@@ -9,6 +9,7 @@ export class ProductListComponent implements OnInit {
 
   pageTitle = 'product list l'
   show_image =false
+  listFilter = 'cart'
   products = [
     {
       "productId": 1,
